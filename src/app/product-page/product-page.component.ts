@@ -20,7 +20,7 @@ export class ProductPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.getProduct();
+    this.getProduct();
 
     this.shareService.currentCategory.
       subscribe( category => {
