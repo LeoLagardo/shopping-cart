@@ -1,0 +1,11 @@
+
+.category-name h1{
+    /* color: #000; */
+    margin: 0;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,46 @@
+.mat-toolbar-multiple-rows {
+  min-height: 50px;
+  height: 60px;
+}
+
+mat-toolbar {
+  position: relative;
+  background-color:  #581b98;;
+  color: #fff;
+  box-shadow: 0px 1px 10px rgba(39, 36, 36, 0.795);
+  z-index: 999;
+}
+
+mat-toolbar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  letter-spacing: 0.6px;
+  font-size: 22px;
+  padding-left: 5px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dl,
+ol,
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}

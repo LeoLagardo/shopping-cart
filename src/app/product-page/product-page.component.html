@@ -1,0 +1,10 @@
+<div class="category-name">
+    <h1>{{category | uppercase}} category</h1>
+</div>
+<hr>
+<div class="products">
+    <div *ngFor="let product of productList">
+        <app-products [product] = product></app-products>
+    </div>    
+</div>
+
