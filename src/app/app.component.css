@@ -10,8 +10,7 @@ mat-sidenav-container{
 }
 
 mat-sidenav{
-    padding: 5px 0;
-    
+    padding: 5px 0;  
 }
 
 mat-sidenav-content{
@@ -27,13 +26,13 @@ mat-nav-list a{
     color: #fff;
 }
 
-mat-sidenav h1{
+/* mat-sidenav h1{
     text-transform: uppercase;
     letter-spacing: 0.7px;
     font-weight: 580;
     border-bottom: 1px solid rgba(201, 199, 199, 0.404);
     padding-bottom: 10px;
-}
+} */
 
 .dark-mode{
     background-color: #242424;

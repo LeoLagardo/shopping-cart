@@ -1,9 +1,9 @@
 <div class="card">
-    <img alt="robot" [src]=product.imageURL />
+    <img alt="product" [src]=product.imageURL />
     <h2>{{product.name}}</h2>
     <button mat-raised-button (click)="addToCart(product)" 
         [ngStyle]="added && {'background-color': '#566b8c', 'color': '#fff'}"
-        [disabled]="added">
-        {{btnText}}
+        >
+        Add to cart
     </button>
 </div>

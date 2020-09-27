@@ -21,6 +21,4 @@ export class ShareService {
   addToCart(product: Product){
     this.product.next(product);
   }
-
-
 }

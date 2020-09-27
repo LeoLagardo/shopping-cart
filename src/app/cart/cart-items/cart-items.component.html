@@ -1,0 +1,22 @@
+<div class="cart-products">
+
+    <img [src]="product.imageURL" alt="product-image">
+    
+    <div class="mid">
+        <h3>{{product.name}}</h3>
+
+        <div class="quantity">
+            Quantity: <input type="number" value={{product.quantity}} (click)="$event.stopPropagation();">
+        </div>
+        
+    </div>
+
+    <div class="end">           
+        <button mat-stroked-button color="accent" 
+            (click)="removeProduct(product.id); $event.stopPropagation();">
+            Remove
+        </button>
+    </div>
+    
+   
+</div>

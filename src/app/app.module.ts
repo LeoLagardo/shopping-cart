@@ -20,6 +20,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { CartComponent } from './cart/cart.component';
 import { FormsModule } from '@angular/forms';
+import { CartItemsComponent } from './cart/cart-items/cart-items.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     SidebarComponent,
     ProductsComponent,
     ProductPageComponent,
-    CartComponent
+    CartComponent,
+    CartItemsComponent
   ],
   imports: [
     BrowserModule,

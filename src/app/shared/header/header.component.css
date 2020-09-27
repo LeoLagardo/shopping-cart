@@ -5,7 +5,7 @@
 
 mat-toolbar {
   position: relative;
-  background-color:  #581b98;;
+  background-color:  #581b98;
   color: #fff;
   box-shadow: 0px 1px 10px rgba(39, 36, 36, 0.795);
   z-index: 999;

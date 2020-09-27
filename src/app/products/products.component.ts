@@ -13,19 +13,16 @@ export class ProductsComponent implements OnInit {
 
   added = false;
 
-  btnText = 'Add to cart';
+  // btnText = 'Add to cart';
 
   constructor(private shareService: ShareService) { }
 
-
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   addToCart(product: Product){
     this.shareService.addToCart(product);
     this.added = true;
-    this.btnText = 'Added';
+    // this.btnText = 'Added';
   }
 
 }

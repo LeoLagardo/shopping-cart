@@ -1,32 +1,18 @@
 <mat-icon  mat-button [matMenuTriggerFor]="menu" 
-    matBadge="{{products.length - 1}}" 
+    matBadge="{{cartQty - 1}}" 
     matBadgeColor="warn">
     shopping_cart
 </mat-icon>
 
 <mat-menu #menu="matMenu">
-   <div class="cart-products" *ngFor="let product of products | slice:1;" >
+    <div class="cart-products" *ngFor="let product of products | slice:1;" >
+  
+    <app-cart-items 
+        (remove)="removeProduct($event)"
+        [product]="product">    
+    </app-cart-items>
 
-        <img [src]="product.imageURL" alt="product-image">
-        
-        <div class="mid">
-            <h3>{{product.name}}</h3>
-
-            <div class="quantity">
-                Quantity: <input type="number" value=1 (click)="$event.stopPropagation();">
-            </div>
-            
-        </div>
-
-        <div class="end">           
-            <button mat-stroked-button color="accent" 
-                (click)="removeProduct(product.id); $event.stopPropagation();">
-                Remove
-            </button>
-        </div>
-        
-       
-   </div>
+    </div>
    <div class="checkout" *ngIf="products.length - 1 > 0">
        <button mat-raised-button color="primary">Checkout</button>
    </div>

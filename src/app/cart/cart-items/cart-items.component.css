@@ -1,0 +1,41 @@
+img{
+    width: 100px;
+}
+
+.cart-products{
+    margin: 2px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: 10px;
+    width: 400px;
+    padding: 5px;
+    color: #fff;
+    background-color: rgba(53, 52, 52, 0.603);
+}
+
+.mid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.end{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+input[type=number]{
+    width: 30px;
+}
+
+::ng-deep.mat-menu-panel {
+    max-width: none !important;
+    max-height: none !important;
+}
+::ng-deep.mat-menu-content {
+    overflow: hidden;
+}
+
+/* .checkout{
+    padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+} */
